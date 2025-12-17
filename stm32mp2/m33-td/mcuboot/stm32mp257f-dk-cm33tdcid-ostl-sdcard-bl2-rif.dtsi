@@ -22,6 +22,10 @@
 	st,backup-zones = <24 24 24 24 12 12 8>;
 };
 
+/* * Note: These GPIOs protect SDMMC1/UART pins. 
+ * Please verify these pins match your DK schematic if runtime errors occur.
+ * Defaulting to EV1 values as safe placeholders.
+ */
 &gpiod {
 	st,protreg = <
 		RIFPROT(RIF_IOPORT_PIN(14), RIF_UNUSED, RIF_UNLOCK, RIF_SEC, RIF_PRIV, RIF_CID2, RIF_SEM_DIS, RIF_CFEN)
