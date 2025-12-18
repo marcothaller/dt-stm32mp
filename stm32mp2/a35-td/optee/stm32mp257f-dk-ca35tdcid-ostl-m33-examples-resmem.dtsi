@@ -99,8 +99,13 @@
 			no-map;
 		};
 
-		spare1: spare1@81300000 {
-			reg = <0x0 0x81300000 0x0 0xcc0000>;
+		ltdc_m33_layer: ltdc-m33-layer@81300000 {
+        	reg = <0x0 0x81300000 0x0 0x400000>;
+        	no-map;
+        };
+
+		spare1: spare1@81700000 {
+			reg = <0x0 0x81700000 0x0 0x8c0000>;
 			no-map;
 		};
 
